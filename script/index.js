@@ -47,27 +47,27 @@ search.addEventListener("click", () => {
                 }, 2500);
 
                 const weatherMain = json.weather[0].main;
-                let weatherImageSrc = "../images/icons/cloud.png";
+                let weatherImageSrc = "./images/icons/cloud.png";
 
                 if (weatherMain === "Clear") {
-                    weatherImageSrc = "../images/icons/clear.png";
+                    weatherImageSrc = "./images/icons/clear.png";
                 } else if (weatherMain === "Rain") {
-                    weatherImageSrc = "../images/icons/rain.png";
+                    weatherImageSrc = "./images/icons/rain.png";
                 } else if (weatherMain === "Snow") {
-                    weatherImageSrc = "../images/icons/snow.png";
+                    weatherImageSrc = "./images/icons/snow.png";
                 } else if (weatherMain === "Clouds" || weatherMain === "Mist" || weatherMain === "Haze") {
-                    weatherImageSrc = "../images/icons/cloud.png";
+                    weatherImageSrc = "./images/icons/cloud.png";
                 }
                     
                     const body = document.querySelector("body");
                     if (weatherMain === "Rain") {
-                        body.style.backgroundImage = "url('../images/rain.jpg')";
+                        body.style.backgroundImage = "url('./images/rain.jpg')";
                     } else if (weatherMain === "Clouds" || weatherMain === "Mist" || weatherMain === "Haze") {
-                        body.style.backgroundImage = "url('../images/clody.jpg')";
+                        body.style.backgroundImage = "url('./images/clody.jpg')";
                     }  else if (weatherMain === "Snow") {
-                        body.style.backgroundImage = "url('../images/snow.jpg')";
+                        body.style.backgroundImage = "url('./images/snow.jpg')";
                     } else {
-                         body.style.backgroundImage = "url('../images/background.jpg')";
+                         body.style.backgroundImage = "url('./images/background.jpg')";
                     }
                     
                 
