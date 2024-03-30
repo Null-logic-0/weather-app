@@ -64,7 +64,7 @@ search.addEventListener("click", () => {
                         body.style.backgroundImage = "url('../images/rain.jpg')";
                     } else if (weatherMain === "Clouds" || weatherMain === "Mist" || weatherMain === "Haze") {
                         body.style.backgroundImage = "url('../images/clody.jpg')";
-                    }  else if (weatherMain === "snow") {
+                    }  else if (weatherMain === "Snow") {
                         body.style.backgroundImage = "url('../images/snow.jpg')";
                     } else {
                          body.style.backgroundImage = "url('../images/background.jpg')";
