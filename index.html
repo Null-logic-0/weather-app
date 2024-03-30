@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luka Tchelidze"/>
+    <link rel="icon" href="./images/icons/moon.png"/>
+    <script src="https://kit.fontawesome.com/89b736b914.js" crossorigin="anonymous"></script>
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="search-container">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="enter your location" />
+        
+        <button class="search-btn">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <p class="hide-city">city hide</p>
+
+      <div class="weather-box">
+        <div class="box">
+          <div class="info-weather">
+            <div class="weather">
+              <img src="./images/icons/cloud.png" alt="clouds-icon" />
+              <p class="temperature">19<span>C</span></p>
+              <p class="description">Cloudy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+            <i class="fa-solid fa-droplet"></i>
+          <div class="text">
+            <div class="info-humidity">
+              <span>0%</span>
+            </div>
+            <p>humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <div class="info-wind">
+              <span>0Km/h</span>
+            </div>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+      <div class="not-found">
+          <img src="./images/404page.svg" />
+          <p>Oops! Location not found!</p>
+      </div>
+    </div>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
